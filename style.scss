@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
   .section-wrapper {
-  
     .msg-container{
       display: flex;
       flex-direction: column;
@@ -14,29 +16,33 @@
       background-color: #003049;
       .new-game{
           display: inline-block;
-          background-color: #d4a373;
-          color: #fefae0;
+          background-color: #f2e8cf;
+          color: #386641;
           padding: 14px 20px;
           margin: 0 auto;
           border: none;
           border-radius: 14px;
           margin-bottom: 20px;
           @media (max-width: 768px) {
-              padding: 10px 14px;
-            
+              padding: 10px 14px;  
+              font-size: 14px;        
           }
+          @media (max-width: 620px) {
+            padding: 7px 10px;
+        }
       }
       .msg{
           color: #d4a373;
           font-size: 40px;
           font-weight: 600;
           margin-bottom: 20px;
+          padding: 0 16px;
           @media (max-width: 768px) {
               font-size: 28px;
               text-align: center;
           }
           @media (max-width: 480px) {
-            font-size: 22px;
+            font-size: 18px;
         }
       }
       .balloon-container {
